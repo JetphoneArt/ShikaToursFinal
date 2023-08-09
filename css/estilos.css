@@ -1,0 +1,252 @@
+body {
+    background-color: #e6cec8;
+    
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@keyframes entrada {
+    from {
+        opacity: 0;
+        transform: translate(0, 30px);
+        transition-timing-function: ease;
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px, 0px);
+        transition-timing-function: ease;
+    }
+}
+@keyframes opacidad {
+    from {
+        opacity: 0;
+        transition-timing-function: ease;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* header */
+#logo {
+    font-size: 0;
+    background-image: url("/img/logo_cel-01.png");
+    width: 64px;
+    height: 70px;
+    line-height: 70px;
+    position: absolute;
+    z-index: 2;
+    left: calc(50% - 25px);
+    margin-top: 14px;
+}
+
+#barra li {
+    margin: 0.5rem;
+}
+
+.navbar-toggler {
+    height: 75px;
+    margin: 10px 0 10px 10px;
+    color: #54728C;
+}
+
+#barra {
+    margin-top: 5px;
+    height: 100vh;
+    z-index: 3;
+    background-color: #54728C;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+}
+
+#barra li a {
+    color: #54728C;
+    text-decoration: none;
+    display: block;
+    background: #fcf8ee;
+    text-align: center;
+    margin-top: 30px;
+    height: 48px;
+    line-height: 2em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+/* fin del header */
+#banner{
+    animation-name: opacidad;
+    animation-duration: 2s;
+}
+/* cards */
+#cards{
+    animation-name: entrada;
+    animation-duration: 3s;
+}   
+.card-link {
+    color: #2A3E59;
+    display: block;
+    text-decoration: none;
+}
+
+.card-body a {
+    background-color: #F2D98D;
+    color: #2A3E59;
+}
+
+#cards {
+    background-color: #D9665B;
+    padding: 3rem 2rem;
+    height: 100%;
+    
+}
+
+.card{
+    height: 100%;
+}
+/* .btn{
+    height: 5vh;
+}
+ */
+
+.boton{
+    max-height: 100%;
+    display: block;
+}
+
+.texto-cards {
+    color: #fdfdf6;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+/* fin cards */
+/* galería */
+#galeria {
+    animation-name: opacidad;
+    animation-duration: 4s;
+    background-color: #2A3E59;
+    padding: 2rem;
+    animation-name: entrada;
+}
+
+#galeria h2 {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 1rem;
+    color: #ffffff;
+}
+
+#galeria p {
+    padding: 0 3rem;
+    color: #ffffff;
+    text-align: center;
+    width: auto;
+}
+
+/* fin galería */
+/* video */
+
+#video {
+    background-color: #d9665b;
+    color: white;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+/* fin de video */
+/* formulario */
+
+#contacto {
+    color: white;
+    background-color: #2A3E59;
+    padding: 2rem;
+}
+
+.contactame {
+    margin: auto;
+    width: 80%;
+    color: white;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+}
+
+form .btn-primary {
+    color: #2A3E59;
+    background-color: #F2D98D;
+    border: none;
+    display: block;
+    width: 100%;
+}
+
+/* fin formulario */
+/* footer */
+
+footer {
+    background-color: #54728C;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0.5rem;
+    color: white;
+}
+.redes a:hover{
+    scale: 110%;
+}
+
+/* fin footer */
+
+
+@media screen and (min-width: 991px) {
+
+    #logo {
+        font-size: 0;
+        background-image: url("/img/logo-01.png");
+        width: 64px;
+        height: 70px;
+        line-height: 70px;
+        position: absolute;
+        z-index: 4;
+        margin-top: 0px;
+        margin-left: 45%
+    }
+
+    #barra li a:hover {
+        color: #F2D98D;
+    }
+
+    #barra ul {
+        margin: 0.5rem;
+    }
+
+
+    #barra li a {
+        font-size: 18px;
+    }
+
+    #barra {
+        margin-top: 0px;
+        height: 75px;
+
+    }
+
+    #barra li a {
+        background: none;
+        margin-top: 0;
+        color: #fdfdf6;
+    }
+
+    #barra li {
+        margin: 0 1.5em;
+        text-align: center;
+        align-items: flex-start;
+    }
+
+}

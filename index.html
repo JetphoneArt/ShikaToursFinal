@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Bicais Martire Joaquín y Martinez Alvarez Sol - DGT4BV - Turno Tarde - 2023</title>
+</head>
+
+<body>
+    <!--Header -->
+    <header class="container-fluid">
+        <h1 id="logo" class="ps-3">Shika Tours</h1>
+        <nav class="row navbar navbar-expand-lg bg-body-tertiary p-0">
+            <div class="container p-0" id="navegacion">
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#barra"
+                    aria-controls="menu" aria-expanded="false" aria-label="menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="barra">
+                    <ul id="menu" class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cards" data-ancla="100">Paquetes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeria" data-ancla="100">Turismo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#video" data-ancla="100">Destacado del mes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto" data-ancla="100">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin del header -->
+
+
+    <!-- carrusel -->
+    <section id="banner" class=" container-fluid p-0 carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Dibujo 1"></button>
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="1" aria-label="Dibujo 2"></button>
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="2" aria-label="Dibujo 3"></button>
+        </div>
+        <ul class="carousel-inner p-0">
+            <li class="carousel-item active">
+                <picture>
+                    <source media="(max-width: 556px)" srcset="img/web_banner1_xs.png">
+                    <source media="(max-width: 991px)" srcset="img/web_banner1_lg.png">
+                    <img src="img/web_banner1_xl.png" class="d-block w-100" alt="Ciervo en entrada">
+                </picture>
+
+            </li>
+            <li class="carousel-item">
+                <picture>
+                    <source media="(max-width: 556px)" srcset="img/web_banner2_xs.png">
+                    <source media="(max-width: 991px)" srcset="img/web_banner2_lg.png">
+                    <img src="img/web_banner2_xl.png" class="d-block w-100" alt="Ciervo primer plano">
+                </picture>
+
+            </li>
+            <li class="carousel-item">
+                <picture>
+                    <source media="(max-width: 556px)" srcset="img/web_banner3_xs.png">
+                    <source media="(max-width: 991px)" srcset="img/web_banner3_lg.png">
+                    <img src="img/web_banner3_xl.png" class="d-block w-100" alt="Templo">
+                </picture>
+
+            </li>
+        </ul>
+        <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+
+
+    <!-- fin carrusel -->
+
+    <!-- Tarjetas -->
+
+
+    <div class="container" id="cards">
+        <div class="texto-cards">
+            <h2>Nuestros Paquetes de viaje</h2>
+            <p>¡Encontrá eso que estás buscando al mejor precio!</p>
+        </div>
+        <section class="row">
+            <div class="col-xl-3 col-md-6 col-xs-12 mb-4">
+                <div class="card">
+                    <img src="img/kasuga.jpg" class="card-img-top" alt="Kasuga">
+                    <div class="card-body">
+                        <h2 class="card-title">Kasuga</h2>
+                        <p class="card-text">Un santuario shinto en la ciudad de Nara, Prefectura de Nara, Japón, es
+                            famoso por sus muchas linternas, tōrō, de bronce. </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>PAÍSES:</strong> JAPON</li>
+                        <li class="list-group-item"><strong>LUGAR DE INTERÉS:</strong> <br>El Santuario Kasuga, y el
+                            Bosque Primigenio Kasugayama cerca de él, están declarados por la Unesco como Patrimonio de
+                            la Humanidad</li>
+                        <li class="list-group-item"><strong>Salidas: </strong>Desde abril 2024 a Julio 2025</li>
+                    </ul>
+                    <div  class="card-body  ">
+                        <a  href="#" role="button" class="btn btn-primary boton mt-4">Más info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-xs-12 mb-4">
+                <div class="card">
+                    <img src="img/nara_park.jpg" class="card-img-top" alt="Nara Park">
+                    <div class="card-body">
+                        <h2 class="card-title">Parque Nara</h2>
+                        <p class="card-text">Es un parque público situado en la ciudad de Nara, Japón, a los pies del
+                            Monte Wakakusa y creado en 1880. El parque es hogar de Nara.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>PAÍSES: </strong>JAPON</li>
+                        <li class="list-group-item"><strong>LUGAR DE INTERÉS:</strong> <br>El parque es el hogar del
+                            Museo Nacional de Nara y del Todai-ji, donde el edificio de madera más grande del mundo
+                            alberga una estatua de Buda.</li>
+                        <li class="list-group-item"><strong>Salidas:</strong> Desde abril 2024 a Julio 2025</li>
+                    </ul>
+                    <div  class="card-body ">
+                        <a  href="#" role="button" class="btn btn-primary boton mt-4">Más info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-xs-12 mb-4 ">
+                <div class="card">
+                    <img src="img/heijopalace.png" class="card-img-top" alt="Heijo Palace">
+                    <div class="card-body">
+                        <h2 class="card-title">Palacio Heijo </h2>
+                        <p class="card-text">El Palacio Imperial de Japón (710-784 d. C.), durante la mayor parte del
+                            período Nara. El palacio estaba localizado en el extremo norte de la ciudad capital,
+                            Heijō-kyō. La ciudad y los jardines del palacio, se inspiraron en Chang'an, la capital de China,</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>PAÍSES:</strong> JAPON</li>
+                        <li class="list-group-item"><strong>LUGAR DE INTERÉS:</strong> <br> Réplica a escala de barco
+                            diplomático japonés</li>
+                        <li class="list-group-item"><strong>Salidas:</strong> Desde abril 2024 a Julio 2025</li>
+                    </ul>
+                    <div  class="card-body ">
+                        <a  href="#" role="button" class="btn btn-primary boton mt-4">Más info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-xs-12 mb-4">
+                <div class="card">
+                    <img src="img/daibutsuden.jpg" class="card-img-top" alt="Daibutsuden">
+                    <div class="card-body">
+                        <h2 class="card-title">Daibutsuden</h2>
+                        <p class="card-text">El pabellón principal del templo budista de Tōdai-ji , ubicado en la ciudad
+                            de Nara, Japón.Los ciervos sika,  mensajeros de los dioses por el sintoísmo, vagan por el terreno libremente.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>PAÍSES:</strong> JAPON</li>
+                        <li class="list-group-item"><strong>LUGAR DE INTERÉS: </strong><br> Alberga en su interior una
+                            estatua de 15 metros del Buda Vairochana, siendo la más grande del mundo.</li>
+                        <li class="list-group-item"><strong>Salidas: </strong>Desde abril 2024 a Julio 2025</li>
+                    </ul>
+                    <div  class="card-body ">
+                        <a  href="#" role="button" class="btn btn-primary boton mt-4">Más info</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- fin tarjetas -->
+    <!-- galeria -->
+
+
+    <section id="galeria" class="container">
+        <h2>Turismo</h2>
+        <p>Estas fotos capturadas por turistas, muestran la belleza de viajar, de encontrarse con cosas nuevas. ¿Qué
+            esperás a tomar tus fotos inolvidables?</p>
+        <div class="row">
+            <div class="col-xl-4 col-md-6 col-xs-12 mb-4 mb-lg-0 ">
+                <a data-fancybox="galeria"
+                    data-srcset="img/galeria1_sm.jpg 576w, img/galeria1_md.jpg 992w, img/galeria1.jpg 1600w"
+                    href="img/galeria1.jpg">
+                    <img src="img/galeria1.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Lámparas Santuario">
+                </a></div>
+            <div class="col-xl-4 col-md-6 col-xs-12 mb-4 mb-lg-0">
+                <a data-fancybox="galeria"
+                    data-srcset="img/galeria2_sm.jpg 576w, img/galeria2_md.jpg 992w, img/galeria2.jpeg 1600w"
+                    href="img/galeria2.jpeg">
+                    <img src="img/galeria2.jpeg" class="w-100 shadow-1-strong rounded mb-4" alt="Ciervo en Parque Nara">
+                </a></div>
+            <div class="col-xl-4 col-md-6 col-xs-12 mb-4 mb-lg-0">
+                <a data-fancybox="galeria"
+                    data-srcset="img/galeria3_sm.jpg 576w, img/galeria3_md.jpg 992w, img/galeria3.jpg 1600w"
+                    href="img/galeria3.jpg">
+                    <img src="img/galeria3.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Santuario Sintoísta">
+                </a></div>
+            <div class="col-xl-4 col-md-6 col-xs-12 mb-4 mb-lg-0">
+                <a data-fancybox="galeria"
+                    data-srcset="img/galeria4_sm.jpg 576w, img/galeria4_md.jpg 992w, img/galeria4.jpg 1600w"
+                    href="img/galeria4.jpg">
+                    <img src="img/galeria4.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Ciervos en parque">
+                </a></div>
+            <div class="col-xl-4 col-md-6 col-xs-12 mb-4 mb-lg-0">
+                <a data-fancybox="galeria"
+                    data-srcset="img/galeria5_sm.jpg 576w, img/galeria5_md.jpg 992w, img/galeria5.jpg 1600w"
+                    href="img/galeria5.jpg">
+                    <img src="img/galeria5.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Ciervos cruzando la calle">
+                </a></div>
+            <div class="col-xl-4 col-md-6 col-xs-12 mb-4 mb-lg-0">
+                <a data-fancybox="galeria"
+                    data-srcset="img/galeria6_sm.jpg 576w, img/galeria6_md.jpg 992w, img/galeria6.jpg 1600w"
+                    href="img/galeria6.jpg">
+                    <img src="img/galeria6.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Parque Nara Primavera">
+                </a></div>
+        </div>
+    </section>
+
+    <!-- fin galeria -->
+
+    <!-- video -->
+    <section class="container" id="video">
+        <div class="row">
+            <div class="col-12 align-self-center">
+                <h2 class="text-center pt-2">Un vistazo dentro de Nara</h2>
+                <p class="text-center">En este vídeo te damos un vistazo a uno de los lugares de interés mas llamativos
+                    dentro de Nara, el parque de ciervos de Nara</p>
+                <video src="img/video.mp4" controls poster="img/portada-ciervos.png" preload=""
+                    class="img-fluid ratio-16x9 align-self-center "></video>
+            </div>
+        </div>
+    </section>
+    <!-- fin video -->
+
+    <!-- Formulario -->
+    <section id="contacto" class="container justify-content-center">
+        <div class="contactame">
+            <h2>Contacto</h2>
+            <p>Para recibir los mejores descuentos y notificaciones acerca de viajes y tours por la ciudad de Nara, nos
+                puedes contactar a través de este formulario!</p>
+        </div>
+        <form class="container col-md-6 fw-bold" action="enviar_formulario.php"
+            enctype="application/x-www-form-urlencoded" method="post">
+            <div class="col-12">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre">
+            </div>
+            <div class="col-12">
+                <label for="mail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="mail">
+            </div>
+            <div class="mb-3">
+                <label for="FormControlTextarea1" class="form-label">Tu comentario</label>
+                <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Quiero recibir novedades</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Fin del formulario -->
+
+    <!-- Footer -->
+    <footer class="container mt-0">
+        <div class="redes">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <a class="col-4" href="https://www.facebook.com" target="_blank"><img src="img/face.png"
+                            alt="facebook"></a>
+                    <a class="col-4" href="https://www.instagram.com" target="_blank"><img src="img/ig2.png"
+                            alt="Instagram"></a>
+                    <a class="col-4" href="https://twitter.com" target="_blank"><img src="img/twit2.png"
+                            alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>Bicais Martire Joaquín y Martinez Alvarez Sol - DGT4BV - Turno Tarde - 2023 </p>
+        </div>
+    </footer>
+    <!-- Fin del footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/marcaBoton.js"></script>
+    <script src="js/fotorama.js"></script>
+</body>
+
+</html>
